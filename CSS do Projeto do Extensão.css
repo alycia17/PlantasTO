@@ -1,6 +1,9 @@
+@charset "UTF-8";
+
 body{
     background-color: rgb(175, 228, 96);
 }
 h1{
     
+   color: aliceblue; 
 }
