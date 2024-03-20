@@ -1,9 +1,110 @@
 @charset "UTF-8";
 
-body{
-    background-color: rgb(175, 228, 96);
+:root{
+  --cor0: #90f1ba;
+  --cor1: #83elad;
+  --cor2: #3ddc84;
+  --cor3: #2fa866;
+  --cor4: #la5c37;
+  --cor5: #063dle;
+
+  --fonte-padrao: Arial, Verdana, Helvetica. sans-serif;
 }
-h1{
-    
-   color: aliceblue; 
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+main p{
+  margin: 15px 0px;
+  text-indent: 30px;
+  font-size: 1em;
+  line-height: 2em;
+}
+
+body{
+  background-color: #c7f7dc;
+  font-family: var(--fonte-padrao); 
+  text-align: justify;
+}
+
+header{
+  background-image: linear-gradient(to bottom, rgb(34, 194, 34), rgb(102, 192, 102));
+  min-height: 150px;
+  text-align: center;
+  padding-top: 40px;
+  background-image: url(Capa\ do\ PTO.png);
+}
+
+header > h1{
+  color: aliceblue;
+  font-family: var(--fonte-padrao);
+  font-size: 3em;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 0px black;
+}
+
+header > p{
+  color: aliceblue;
+  font-family: var(--fonte-padrao);
+  font-size: 1.2em;
+  max-width: 500px;
+  margin: auto;
+  text-shadow: 2px 2px 0px black;
+}
+
+nav{
+  background-color: rgb(102, 192, 102);
+  padding: 10px;
+  box-shadow: 0px 7px 9px black;
+}
+
+nav > a{
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition-duration: .5s;
+}
+
+nav > a:hover{
+  background-color: #2fa866;
+  color: aliceblue;
+}
+
+main{
+  min-width: 300px;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 30px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+main h3{
+  color: green;
+  font-family: var(--fonte-padrao);
+  font-size: 1.3em;
+  background-image:linear-gradient(to right, var(--cor0), transparent);
+}
+
+footer{
+  background-color: green;
+  color: white;
+}
+
+main img.pequena{
+  width: 30%;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+main img{
+  width: 100%;
 }
